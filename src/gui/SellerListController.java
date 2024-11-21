@@ -116,10 +116,10 @@ public class SellerListController implements Initializable, DataChangeListener {
 	  parentStage) { try { FXMLLoader loader = new
 	  FXMLLoader(getClass().getResource(absoluteName)); Pane pane = loader.load();
 	  
-	 /* SellerFormController controller = loader.getController();
+	  SellerFormController controller = loader.getController();
 	  controller.setSeller(obj); controller.setSellerService(new SellerService());
 	  controller.subscribeDataChangeListener(this); controller.updateFormData();
-	  */
+	  
 	  Stage dialogStage = new Stage(); dialogStage.setTitle("Enter Seller data");
 	  dialogStage.setScene(new Scene(pane)); dialogStage.setResizable(false);
 	  dialogStage.initOwner(parentStage);
